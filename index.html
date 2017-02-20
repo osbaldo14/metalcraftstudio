@@ -106,13 +106,22 @@
           
           #line{
               height:1px;
-              width:80%;
+              width:100%;
               background-color:black;
               margin:auto;
           }
           
-          #pictures img{
+          #pictures{
+              height:400px;
               width:100%;
+              
+              background-color:black;
+          }
+          
+          #pictures img{
+              height:400px;
+              width:80%;
+              margin:auto;
           }
           
           #motto{
@@ -157,9 +166,16 @@
                     
                 </div>
                 
-                <div id = "pictures" style = "height:400px;">
+                <div id = "pictures">
                     
-                    
+                    <div class="w3-content w3-display-container">
+                        
+                        <img class="mySlides" src="images1/Doorsandgates/20151105_114525.jpg">
+                        <img class="mySlides" src="images1/Doorsandgates/20151120_114837.jpg">
+                        <img class="mySlides" src="images1/Doorsandgates/20151215_173637.jpg">
+                        <img class="mySlides" src="images1/Doorsandgates/20160123_173721.jpg">
+                        
+                    </div>
                 
                 </div>
                 
@@ -191,6 +207,24 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+      
+    <script>
+        
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 3000); // Change image every 3 seconds
+        }
+      </script>
       
   </body>
     
