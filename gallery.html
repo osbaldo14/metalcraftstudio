@@ -4,556 +4,169 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Tia's Mexican & Seafood Restaurant</title>
-
-    <!-- Bootstrap -->
+      
     <link href="css/bootstrap.min.css" rel="stylesheet">
       
-      <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-89653591-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
+      <title>Metal Craft Studios</title>
       
-    <style>
-        
-        html, body{
-            height:100%;
-        }
+      <meta name="description" content= "">
       
-        body{
-            padding:0;
-            margin:0;
-            background-color:#38629E;
-        }
-        
-        
-        .paddingTop{
-            height:25px;
-        }
-        
-        #tags{
-            position:absolute;
-            margin-left:70%;
-            opacity:;
-            height:40px;
-            width:170px;
-            float:right;
-            margin-top:30px;
-            padding:5px;
-            color:white;
-            
-            
-        }
-        
-        @media screen
-            and (max-width: 991px){
-                #tags{
-                   display:none;
-                }
-        }
-        
-        
-        
-        #back{
-            height:40px;
-            width:170px;
-            background-color:lightgray;
-            opacity:.5;
-            margin-left:70%;
-            position:absolute;
-            margin-top:30px;
-        }
-        
-        @media screen
-            and (max-width: 991px){
-                #back{
-                    display:none;
-                }
-        }
-        
-        .small{
-            height:210px
-        }
-        
-        @media screen
-            and (min-width: 992px){
-                .small{
-                    display:none;
-                }
-        }
-        
-        .top{
-            height:20px;
-            background-color:#38629E;
-        }
-        
-        @media screen
-            and (min-width:991px){
-                .top{
-                    height:100px;
-                }
-        }
-        
-        .whole{
-            padding:0;
-            margin:0;
-            height:280px;
-        }
-        
-        @media screen 
-            and (max-width: 991px){
-                .whole{
-                    display:none;
-                }
-        }
-        
-        #tags p{
-            margin-top:3px;
-            font-size:1.3em;
-            float:left;
-        }
-        
-        #tags img{
-            height:30px;
-            width:35px;
-            float:right;
-            padding:0 5px 0 0;
-            
-        }
-        
-        
-        
-        .header{
-            width:100%;
-            background-color:white;
-            height:100px;
-            float:left;
-        }
-        
-        @media screen
-            and (max-width: 991px){
-                #back{
-                    display:none;
-                }
-        }
-        
-        @media screen
-            and (max-width: 991px){
-                .header{
-                    margin-top:0px;
-                    position:relative;
-                }
-        }
-        
-        .padding{
-            padding:8px;
-        }
-        
-        .lineH{
-            width:100%;
-            height:3px;
-            background-color:red;
-        }
-        
-        .line{
-            width:100%;
-            height:3px;
-            background-color:red;
-        }
-        
-        .container{
-            width:75%;
-            margin: auto;
-            height:61.2px;
-        }
-        
-        .con{
-            width:75%;
-            margin:auto;
-        }
-        
-        @media screen 
-        and (max-width:991px){
-            .container ul{
-                display:none;
-            }
-        }
-        
-        .container ul{
-            list-style: none;
-            padding-left:250px;
-        }
-        
-        .container li{
-            float:left;
-            padding: 20px 15px;
-            color:blue;
-            font-weight:bold;
-        }
-        
-        .container li:hover{
-            font-size:1.2em;
-            margin-top:-4px;
-        }
-        
-        .container a{
-            color:blue;
-        }
-        
-        
-        
-        .logo{
-            float:left;
-            width:300px;
-            margin-top:-173px;
-            margin-left:-50px;
-        }
-        
-        @media screen
-            and (max-width:400px){
-                .logo{
-                    width:260px;
-                    margin-top:-141px
-                }
-        }
-        
-        
+      
     
-        .dropbtn{
-            background-color:red;
-            color:yellow;
-            padding:8px;
-            width:40px;
-            border: none;
-            cursor:pointer;
-            margin-top:15px;
-        }
-        
-        .lineButton{
-            height:3px;
-            width:24px;
-            padding: 0 2px;
-            background-color:white;
-        }
-        
-        .linePadding{
-            height:5px;
-        }
-        
-        
-        .dropdown{
-            position:relative;
-            display:inline-block;
-            float:right;
-            margin-top:-2.5px;
-        }
-        
-         @media screen 
-        and (min-width:991px){
-            .dropdown{
-                display:none;
-            }
-        }
-        
-        @media screen 
-        and (max-width:500px){
-            .container{
-                width:96%;
-            }
-        }
-        
-        @media screen 
-        and (max-width:400px){
-            .container{
-                width:100%;
-            }
-        }
-        
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: yellow;
-            min-width: 160px;
-            overflow: auto;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            font-weight:bold;
-            margin-left:-120px;
-            margin-top:50px;
-        }
-
-        .dropdown-content a {
-            color:red;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            }
-        
-        .dropdown-content a:hover{
-            background-color:gold ;
-        }
-        
-        a{
-            color:red;
-            text-decoration:none; 
-            
-        }
-        
-        .show {
-            display:inline-block
-        }
-        
-        .center{
-            text-align:center;
-        }
-        
-        #img{
-            background:url("images/button.png");
-            background-position: center;
-            height:33px;
-            width:35px;
-            float:right;
-        }
-     
-        #black{
-            background-color:black;
-            width:80%;
-            margin:auto;
-            padding:20px;
-            color:white;
-        }
-        
-        input,textarea{
-            color:black;
-        }
-        
-        #tags2{
-            margin:auto;
-            height:50px;
-            width:180px;
-            color:white;
-            background-color:black;
-            padding:10px;
-        }
-        
-        #tags2 p{
-            margin-top:3px;
-            font-size:1.3em;
-            float:left;
-        }
-        
-        #tags2 img{
-            height:30px;
-            width:35px;
-            padding:0 5px 0 0;
-            float:right;
-            
-        }
-        
-        @media screen 
-        and (min-width:991px){
-            #tags2{
-                display:none;
-            }
-        }
-
-        
-    </style>
+      <style>
+          
+          body{
+              background-color:#042246;
+          }
+          
+          #title{
+              color:silver;
+              text-align: center;
+              font-size:5em;
+              position:relative;
+              top:25px;
+              font-family:"Brush Script MT", cursive;
+          }
+          
+          
+          #title span{
+              font-size:.5em;
+              position:relative;
+              top:-50px;
+          }
+          
+          #square{
+              width:90%;
+              height:1000px;
+              background-color:white;
+              margin:auto;
+              position:relative;
+          }
+          
+          #heading{
+              width:100%;
+              height:120px;
+              background-color:silver;
+              float:none;
+          }
+          
+          #heading img{
+              height: 120px;
+              width: 150px;
+              position:absolute;
+          }
+          
+          #list ul{
+              padding:0;
+              list-style-type: none;
+              width:335px;
+              margin:auto;
+          }
+          
+          #list ul li{
+              float:left;
+              padding:10px;
+              padding-top:39.5px;
+              padding-bottom:39.5px;
+              font-size:2em;
+              font-weight:;
+          }
+          
+          #list ul li:hover{
+              background-color:black;
+              color:white;
+              text-decoration: underline;
+              font-size:2.3em;
+              padding-top:37px;
+              padding-bottom:37px;
+          }
+          
+          #heading p{
+              float:right;
+              position:relative;
+              top:42px;
+              font-size:1.8em;
+              padding-right:30px;
+          }
+          
+          #aboutus{
+              height:400px;
+              text-align: center;
+              border-top: 1px solid black;
+          }
+          
+          #line{
+              height:1px;
+              width:80%;
+              background-color:black;
+              margin:auto;
+          }
+          
+          #pictures img{
+              width:100%;
+          }
+          
+          #motto{
+              background-color:silver;
+              height:120px;
+          }
+      
+      </style>
       
   </head>
   <body>
       
-    <div class = "small">
-        
-        <div class = "top"></div>
+      <div id = "back">
       
-        <div class = "header">
+        <div>
             
-            <div class = "padding"></div>
-      
-            <div class = "lineH"></div>  
+            <div id = "name">
+            
+                <div id = "title">Metal Craft Studios<br /><span>By Castaneda</span></div>
+            
+            </div>
         
-            <div class = "container">
-            
-                <img class = "logo" src = "images/logo4.png" />
+            <div id = "square">
                 
-                <div class = "dropdown">
+                <div id = "heading">
+                
+                    <img src = "images/metalcraftstudios/IMG_52501.jpg"/>
                     
-                    <div type = "button" onclick = "myFunction()" class = "dropbtn" id ="img">
+                    <div id = "list">
                     
+                        <ul>
                         
+                            <li href = "index.html">Home</li>
+                            <li href = "gallery.html">Gallery</li>
+                            <li href = "contact.html">Contact</li>
+                    
+                        </ul>
                     
                     </div>
                     
-                
-                    <div id = "myDropdown" class = "dropdown-content">
-                
-                        <a href="index.html">HOME</a>
-                        <a href="menu.html">MENU</a>
-                        <a href="contactUs.html">CONTACT US</a>
-                
-                    </div>
-                
+                    <p>(214) 416 - 6077</p>
+                    
                 </div>
                 
-            </div>
-            
-            <div class = "line"></div>
-
-            <div class = "padding"></div>
-      
-      </div>
-        
-        <div class = "background"> </div>
-      
-    </div>
-      
-    <div class = "whole">
-        
-        <div class = "top">
-        
-            <div id = "back"></div>
-        
-            <div id = "tags">
-        
-                <p>Follow us:</p>
-                <a href = "http://www.facebook.com/TiasElp/" target = "_blank"><img src = "images/Facebook2.png" ></a>
-                <a href = "http://www.yelp.com/biz/tias-mexican-and-seafood-restaurant-el-paso" target = "_blank"><img id = "yelp" src = "images/yelp.png" href =""></a>
-        
-            </div>
-        
-        </div>
-          
-        <div class = "header">
-            
-            <div class = "padding"></div>
-      
-            <div class = "lineH"></div>  
-        
-            <div class = "container">
-            
-                <img class = "logo" src = "images/logo4.png" />
-            
-                <ul>
-                                
-                    <li><a href = "index.html">HOME</a></li>
-                    <li><a href = "menu.html" >MENU</a></li>
-                    <li><a href = "contactUs.html">CONTACT US</a></li>
-        
-                </ul>
+                <div id = "motto" style = "position:relative;top:760px;">
                 
+                    
+                
+                </div>
+            
             </div>
             
-            <div class = "line"></div>
-
-            <div class = "padding"></div>
-      
-      </div>
-           
-   </div>
-      
-    <div id = "black">
-        
-        <h3 style="text-align:center">Contact Us:</h3>
-        <h4 style = "text-align:center">For any questions or concerns please fill out the form below or contact us by email or phone.</h4>
-        <br />
-        
-        <form action="https://formspree.io/tiasrestaurant@att.net"
-      method="POST" target = "_blank" class ="center">
-            
-            <h5>Name</h5>
-            <input type="text" name="name">
-            <br />
-            
-            <h5>Email Adress</h5>
-            <input type="email" name="_replyto">
-            <br />
-            
-            <h5>Questions or Comments</h5>
-            <textarea rows="3" cols="22" name="comments"></textarea>
-            <br />
-            
-            <br/>
-            <input  type="submit" onclick = "formsubmit()" value="Send">
-            
-            <input type="hidden" name="_next" value="contactSuccess.html" target = "_self" />
-            
-        </form>
-        
-        <div class = "center">
-        
-            <br/>
-            <br />
-            <h4>Email: Tiasrestaurant@att.net</h4>
-            <h4>Phone Number: 915-845-1665</h4>
+            <div style = "height:80px;"></div>
             
         </div>
-        
-        
-    <div id = "back2"></div>
-    
-    </div>
       
-      <br />
-      <br />
-    
+      </div>
       
-    <div id = "tags2">
-        
-            <p class = "center">Follow us:</p>
-            <a href = "http://www.facebook.com/TiasElp/" target = "_blank"><img src = "images/Facebook2.png" ></a>
-            <a href = "http://www.yelp.com/biz/tias-mexican-and-seafood-restaurant-el-paso" target = "_blank"><img id = "yelp" src = "images/yelp.png" href =""></a>
-        
-    </div>
-      
-    <br />
-    <br />
-      
-      
-      
-
-
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js">
+    <script src="js/bootstrap.min.js"></script>
       
-      
-    </script>
-      
-      <script>
-          /* When the user clicks on the button, 
-          toggle between hiding and showing the dropdown content */
-        function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");
-          }
-
-          
-        // Close the dropdown if the user clicks outside of it
-        window.onclick = function(event) {
-        if (!event.target.matches('.dropbtn')) {
-            var dropdowns = document.getElementsByClassName("dropdown-content");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                    var openDropdown = dropdowns[i];
-                    if (openDropdown.classList.contains('show')) {
-                    openDropdown.classList.remove('show');
-                    }
-                }
-            }
-        }
-        
-        
-      </script>
-      
-    <script src="https://www.hostingreviews.website/google-maps-authorization.js?id=c09bf7f0-8c77-1058-5314-24706e06fae5&c=google-maps-html&u=1464705803" defer="defer" async="async"></script>
-            
-      
-    </body>
+  </body>
+    
 </html>
