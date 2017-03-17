@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+      
+      <title>Metal Craft Studios</title>
+      
+      <meta name="description" content= "Welcome to Metal Craft Studios By Castaneda. Your one stop for custom ornamental iron of metal fabrications. Gates, Staircases, doors, etc. Creating the jewelry for your home.">
+      
+      <meta name = "keywords" content = "Ornamental iron work,ornamental,iron,ornamental work,iron work,metal,fabricators,metal fabricators,custom,design,custom design,chandaliers,lights,staircases,wall rails,rails,balconies,wall,gates,tables,repairs,residential,commercial,welding,blacksmith,forged,blacksmith forged,walkway gates,fire screens,screens,fences,spiral,spiral stairs,window guards,window,doors,lanterns,interior,exterior">
+      
+      <style>
+          
+          .center{
+              text-align: center;
+          }
+          
+          body{
+              background-color:#623A17;
+          }
+          
+          #square{
+              width:90%;
+              border:1px solid black;
+              box-shadow: 10px 10px;
+              margin:auto;
+              position:relative;
+              background-color:white;
+          }
+          
+          #heading{
+              width:100%;
+              height:120px;
+              background-color:black;
+              float:none;
+          }
+          
+          #name{
+              float:left;
+              padding-left:30px;
+              color:white;
+          }
+          
+          #list ul{
+              padding:0;
+              list-style-type: none;
+              width:350px;
+              margin:0 auto;
+          }
+          
+          #list ul li{
+              float:left;
+              padding: 0px 10px;
+              font-size:2em;
+              font-weight:;
+              position:relative;
+              top:40px;
+          }
+          
+          #list ul li a:link{
+              color:white;
+          }
+          
+          #list ul li a:visited{
+              color:white;
+          }
+          
+          #list ul li a:hover{
+              background-color:black;
+              color:white;
+              text-decoration: underline;
+              font-size:1.1em;
+              padding:42px 10px;
+              position:relative;
+              top:-3px;
+          }
+          
+          #heading p{
+              float:right;
+              position:relative;
+              top:42px;
+              font-size:1.8em;
+              padding-right:30px;   
+          }
+          
+          @media screen
+              and (max-width:1199px){
+                  
+                  #heading{
+                      display:none;
+                  }
+                  
+          }
+          
+          #heading2{
+              background-color:black;
+              height:120px;
+              width:100%;
+              color:white;
+          }
+          
+          #name2{
+              float:left;
+              padding: 5px 20px;
+          }
+          
+          #button{
+              height:35px;
+              background-color:black;
+              width:35px;
+              float:right;
+              border:1px solid white;
+              margin:42.5px 20px;
+          }
+          
+          #buttonLine{
+              width:25px;
+              height:1px;
+              background-color:white;
+              margin-top:6px;
+              position:relative;
+              right:2px;
+              top:-3px;
+          }
+          
+          #dropdown{
+              float:right;
+              position:relative;
+              top:77px;
+              left:54px;
+              height:120px;
+              width:100px;
+              background-color:black;
+          }
+          
+          #dropdown ul{
+              list-style-type:none;
+              
+          }
+          
+          #dropdown li{
+              border:1px solid white;
+              padding: 9.1px 78px 9.1px 21px;
+              position:relative;
+              right:40px;
+          }
+          
+          .dropdown-content {
+              display: none;
+              position: absolute;
+              background-color: yellow;
+              min-width: 160px;
+              overflow: auto;
+              box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+              font-weight:bold;
+              margin-left:-120px
+          }
+
+          .dropdown-content a {
+              color:red;
+              padding: 12px 16px;
+              text-decoration: none;
+              display: block;
+          }
+          
+          #dropdown li a:link{
+              color:white;
+          }
+          
+          #dropdown li a:visited{
+              color:white;
+          }
+          
+          #dropdown a:hover{
+              background-color:white;
+              color:black;
+          }
+          
+          #dropdown a{
+              text-decoration:none;
+              background-color:black;
+              color:white;
+          }
+          
+          #dropdown li:hover{
+              background-color:white;
+              color:black;
+          }
+          
+          .show{
+              visibility:hidden;
+          }
+          
+          @media screen
+              and (min-width:1200px){
+                  
+                  #heading2{
+                      display:none;
+                  }
+                  
+          }
+          
+          @media screen
+              and (max-width:541px){
+                  
+                  #name2{
+                      padding:15px 0px 15px 5px;
+                  }
+                  
+                  #name2 h2{
+                      font-size:1.3em;
+                  }
+                  
+                  #name2 h4{
+                      font-size:1.1em;
+                  }
+                  
+                  #button{
+                      margin:42.5px 5px 42.5px 0px;
+                  }
+                  
+                  #dropdown{
+                      position:relative;
+                      left:34px;
+                  }
+                  
+                  .show{
+                      display:inline-block;
+                  }
+                  
+          }
+          
+          @media screen
+              and (max-width:441.25px){
+                  
+                  #square{
+                      width:353px;
+                  }
+                  
+                  #name2{
+                      padding:16px 0px 25px 5px;
+                  }
+                
+                  #name2 h2{
+                      font-size:.1.3em;
+                  }
+                  
+                  #name2 h4{
+                      font-size:.90em;
+                  }
+                  
+          }
+          
+          #motto{
+              background-color:black;
+              position:relative;
+              top:10px;
+          }
+          
+          #motto h1{
+              text-align: center;
+              padding:40px 0;
+              background-color:black;
+              color:white;
+          }
+      
+      </style>
+      
+  </head>
+  <body>
+      
+      <div id = "back">
+      
+        <div>
+            
+            <div style = "height:30px"></div>
+        
+            <div id = "square">
+                
+                <div id = "heading">
+                
+                    <div id = "name">
+                    
+                        <h1>Metal Craft Studios</h1>
+                        <h3 style = "padding-left:70px;">By Castaneda</h3>
+                    
+                    </div>
+                    
+                    <div id = "list">
+                    
+                        <ul>
+                        
+                            <li><a href = "index.html">Home</a></li>
+                            <li><a href = "gallery.html">Gallery</a></li>
+                            <li><a href = "contact.html">Contact</a></li>
+                    
+                        </ul>
+                    
+                    </div>
+                    
+                    <p><a style = "color:white" href = '214-416-6077'>(214) 416 - 6077</a></p>
+                    
+                </div>
+                
+                <div id = "heading2">
+                
+                    <div id = "name2">
+                    
+                        <h2>Metal Craft Studios</h2>
+                        <h4>By Castaneda</h4>
+                    
+                    </div>
+                    
+                    <button id = "button" onclick="myFunction()">
+                    
+                            <div id = "buttonLine"></div>
+                            <div id = "buttonLine"></div>
+                            <div id = "buttonLine"></div>
+                    
+                    </button>
+                    
+                    <div id = "dropdown" class = "show">
+                    
+                        <ul>
+                        
+                            <a href = "index.html"><li>Home</li></a>
+                            <a href = "gallery.html"><li>Gallery</li></a>
+                            <a href = "contact.html"><li>Contact</li></a>
+                    
+                        </ul>
+                    
+                    </div>
+                
+                </div>
+                
+                <div style = "height:100px;width:100%;"></div>
+                
+                <div id = "motto">
+                
+                    <h1>Creating the Jewelry for your home</h1> 
+                
+                </div>
+            
+            </div>
+            
+            <div style = "height:42px;"></div>
+            
+        </div>
+      
+      </div>
+      
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+      
+    <script>
+      
+        /* When the user clicks on the button, 
+          toggle between hiding and showing the dropdown content */
+        function myFunction() {
+        document.getElementById("dropdown").classList.toggle("show");
+        }
+        
+    </script>
+      
+      
+  </body>
+    
+</html>
