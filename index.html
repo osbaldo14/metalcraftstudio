@@ -21,6 +21,10 @@
               background-color:#623A17;
           }
           
+          #topSpace{
+              height:30px;
+          }
+          
           #square{
               width:90%;
               border:1px solid black;
@@ -43,6 +47,10 @@
               color:white;
               position:relative;
               top:-6px;
+          }
+          
+          #name h3{
+              padding-left:70px;
           }
           
           #list ul{
@@ -77,6 +85,10 @@
               padding:42px 10px;
               position:relative;
               top:-3px;
+          }
+          
+          #number{
+              color:white;
           }
           
           #heading p{
@@ -124,8 +136,8 @@
               background-color:white;
               margin-top:6px;
               position:relative;
-              top:3px;
-              right:-4px;
+              top:-2px;
+              right:2px;
           }
           
           #button:hover{
@@ -294,6 +306,10 @@
               margin:auto;
           }
           
+          #line{
+              width:80%;
+          }
+          
           #motto{
               background-color:black;
               position:relative;
@@ -307,6 +323,10 @@
               color:white;
           }
       
+          .space{
+              height:42px;
+          }
+          
       </style>
       
   </head>
@@ -316,20 +336,20 @@
       
         <div>
             
-            <div style = "height:30px"></div>
+            <div id = "topSpace"></div>
         
             <div id = "square">
                 
-                <div id = "heading">
+                <header id = "heading">
                 
                     <div id = "name">
                     
                         <h1>Metal Craft Studios</h1>
-                        <h3 style = "padding-left:70px;">By Castaneda</h3>
+                        <h3>By Castaneda</h3>
                     
                     </div>
                     
-                    <div id = "list">
+                    <nav id = "list">
                     
                         <ul>
                         
@@ -339,13 +359,13 @@
                     
                         </ul>
                     
-                    </div>
+                    </nav>
                     
-                    <p><a style = "color:white" href = '214-416-6077'>(214) 416 - 6077</a></p>
+                    <p><a id = "number" href = '214-416-6077'>(214) 416 - 6077</a></p>
                     
-                </div>
+                </header>
                 
-                <div id = "heading2">
+                <header id = "heading2">
                 
                     <div id = "name2">
                     
@@ -354,15 +374,19 @@
                     
                     </div>
                     
-                    <div type = "button" id = "button" onclick = "myFunction()">
+                    <button id = "button" onclick = "myFunction()">
+                    
+                        <div>
                     
                             <div class = "buttonLine"></div>
                             <div class = "buttonLine"></div>
                             <div class = "buttonLine"></div>
                     
-                    </div>
+                        </div>
                     
-                    <div id = "dropdown" class = "show">
+                    </button>    
+                        
+                    <nav id = "dropdown" class = "show">
                     
                         <ul>
                         
@@ -372,18 +396,18 @@
                     
                         </ul>
                     
-                    </div>
+                    </nav>
                 
-                </div>
+                </header>
                 
                 <div id = "pictures">
                     
                     <div class="w3-content w3-display-container">
                         
+                        <img class="mySlides" src="images/hotscroll.JPG">
                         <img class="mySlides" src="images/20160921_132446.jpg">
                         <img class="mySlides" src="images/20160921_132523.jpg">
                         <img class="mySlides" src="images/20161105_175100.jpg">
-                        <img class="mySlides" src="images/hotscroll.JPG">
                         <img class="mySlides" src="images/Unknown.jpg">
                         
                     </div>
@@ -394,21 +418,21 @@
                 
                     <h1>About Us:</h1>
                     
-                    <div id = "line" style = "width:80%;"></div>
+                    <div id = "line"></div>
                     
                     <p>Metal Craft Studios is an excellent fence, metal fabrication, and gate installation company, which was founded in 2014, and has been doing business since 1987. We at Metal Craft Studios rely on having a trustworthy and veracity company, which will be the groundwork for all negotiations and transactions. It is our purpose to provide the kind of worth and craftsmanship awe would anticicpate at our own private home and businesses. Metal Cral Craft Studios is exceedingly pleased of its legacy and reputation, and it is our aspiration to continue to excel and develop, which is stregthen everyday by the praises of our customers.</p>
                 
                 </div>
                 
-                <div id = "motto">
+                <footer id = "motto">
                 
                     <h1>Creating the Jewelry for your home</h1>    
                 
-                </div>
+                </footer>
             
             </div>
             
-            <div style = "height:42px;"></div>
+            <div class = "space"></div>
             
         </div>
       
