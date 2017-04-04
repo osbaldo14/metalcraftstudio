@@ -135,14 +135,13 @@
               background-color:white;
               margin-top:6px;
               margin-left:-2px;
+              position:relative;
+              top:3px;
+              right:-6px;
           }
           
           #button:hover{
               cursor: pointer;
-          }
-          
-          #buttonStyle{
-              margin-top:-5px;
           }
           
           #dropdown{
@@ -150,7 +149,7 @@
               position:relative;
               top:77px;
               left:54px;
-              height:118px;
+              height:121px;
               width:100px;
               background-color:black;
           }
@@ -297,8 +296,7 @@
           #pictures{
               height:450px;
               width:100%;
-              
-              background-color:;
+              background-color:black;;
           }
           
           #pictures img{
@@ -375,17 +373,13 @@
                     
                     </div>
                     
-                    <button id = "button" onclick = "myFunction()">
+                    <div id = "button" onclick = "myFunction()">
                     
-                        <div id = "buttonStyle">
+                        <div class = "buttonLine"></div>
+                        <div class = "buttonLine"></div>
+                        <div class = "buttonLine"></div>
                     
-                            <div class = "buttonLine"></div>
-                            <div class = "buttonLine"></div>
-                            <div class = "buttonLine"></div>
-                    
-                        </div>
-                    
-                    </button>    
+                    </div>    
                         
                     <nav id = "dropdown" class = "show">
                     
